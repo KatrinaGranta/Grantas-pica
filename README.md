@@ -6,5 +6,6 @@ Projekta uzdevumi:
 - [x] Jaunu zaru izstrāde
 - [x] Regulāra commit ieviešana
 - [ ] Git parbaudes darba nodošana laikā
+- [ ] Pareiza sākotnēja Git projekta izveide
 
 ![GitHub Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWBl2Tp8c_mRVbjeAl9Kvw7oaOMRSa21x45g&usqp=CAU)
