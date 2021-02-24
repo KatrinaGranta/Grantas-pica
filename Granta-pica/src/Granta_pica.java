@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 
 import javax.swing.JOptionPane;
@@ -30,6 +32,21 @@ public class Granta_pica {
 			JOptionPane.showMessageDialog(null, "Kļūme ierakstot failā!", "Kļūme!", JOptionPane.ERROR_MESSAGE);
 		}
 	}
+	public static void apskatit (){
+		
+		String teksts;
+		try{
+			failaNosaukums1 = JOptionPane.showInputDialog("pasūtījums: ");
+			FileReader fr = new FileReader(failaNosaukums1);
+			BufferedReader lasa = new BufferedReader(fr);
+			while((teksts=lasa.readLine())!=null){
+				System.out.println(teksts);
+			}
+			lasa.close();
+		}catch(Exception e){
+			JOptionPane.showMessageDialog(null, "Kļūme ierakstot failā!", "Kļūme!", JOptionPane.ERROR_MESSAGE);
+		}
+	}
 
 	public static void main(String[] args) {
 		String picasIzvele;
@@ -43,6 +60,7 @@ public class Granta_pica {
 				klientaInfo();
 			break;
 			case "2":
+				apskatit();
 			break;
 			case "3":
 				break;
