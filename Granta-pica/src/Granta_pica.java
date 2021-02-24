@@ -63,6 +63,39 @@ public class Granta_pica {
 				apskatit();
 			break;
 			case "3":
+				String izvele, picasIzmers;
+				int klientaIzvele=0;
+				double rekins;
+				picasIzmers =  JOptionPane.showInputDialog(null, "Picas izmers: \n" + "1 - Lielā \n2 - Videjā" + "\n3 - mazā");
+				if(klientaIzvele ==1) {
+					rekins  =+ 9.99;
+				}else if(klientaIzvele == 2){
+					rekins =+ 5.99;
+				}else if(klientaIzvele == 3){
+					rekins =+ 3.99;
+					
+				}
+				izvele =  JOptionPane.showInputDialog(null, " Izvēlies savu picu: \n" + "1 - Kalifornijas pica \n2 - Siera pica" + "\n3 - Pikantā pica\n4 - Lauku pica");
+				klientaIzvele = Integer.parseInt(izvele);
+				if(klientaIzvele == 1 | klientaIzvele == 2);
+				rekins =+ 0;
+				
+				izvele = JOptionPane.showInputDialog(null,"Vai vēleis dzērienu?\n1 - Jā\n2- Nē");
+				klientaIzvele = Integer.parseInt(izvele);
+				 if(klientaIzvele == 1  )
+					 rekins += 0.90;
+				 
+				izvele = JOptionPane.showInputDialog(null,"Vai vēleis piedavas?\n1 - Jā\n2- Nē");
+					klientaIzvele = Integer.parseInt(izvele);
+					 if(klientaIzvele == 1  )
+						 rekins += 1.20;
+				 
+				izvele = JOptionPane.showInputDialog(null,"Vai pasūtījumu vajadzēs piegādāt?\n1 - Jā\n2- Nē");
+					klientaIzvele = Integer.parseInt(izvele);
+					 if(klientaIzvele == 1  )
+						 rekins += 3.00;
+				 
+				 JOptionPane.showMessageDialog(null,"Rēķins ir " + rekins );
 				break;
 			case "x":
 				JOptionPane.showMessageDialog(null, "Programma apturēta!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
